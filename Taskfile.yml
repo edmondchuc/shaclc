@@ -6,6 +6,12 @@ vars:
   GREETING: Hello, World!
 
 tasks:
+  code:check:
+    desc: Check whether code formatting rules apply.
+    cmds:
+      - poetry run black --check shaclc tests
+      - poetry run ruff check shaclc tests
+
   code:
     desc: Format and standardise code.
     cmds:
