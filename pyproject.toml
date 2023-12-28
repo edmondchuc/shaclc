@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "shaclc"
+version = "0.1.0"
+description = ""
+authors = ["Edmond Chuc <edmond.chuc@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lark = "^1.1.8"
+rdflib = "^7.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.12.1"
+ruff = "^0.1.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

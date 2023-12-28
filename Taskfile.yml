@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  code:
+    desc: Format and standardise code.
+    cmds:
+      - poetry run black shaclc tests
+      - poetry run ruff --fix shaclc tests
+
+  test:
+    desc: Run Python tests.
+    cmds:
+      - poetry run pytest

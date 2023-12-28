@@ -1,0 +1,9 @@
+BASE <http://example.com/ns>
+
+IMPORTS <http://example.com/person-ontology>
+
+PREFIX ex: <http://example.com/ns#>
+
+shape ex:PersonShape -> ex:Person {
+	ex:ssn xsd:string [0..1] pattern="^\\d{3}-\\d{2}-\\d{4}$" .
+}
