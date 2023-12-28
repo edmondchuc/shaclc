@@ -1,12 +1,28 @@
 [tool.poetry]
 name = "shaclc"
 version = "0.1.0"
-description = ""
+description = "A Python SHACL Compact Syntax parser and serializer."
 authors = ["Edmond Chuc <edmond.chuc@outlook.com>"]
+keywords = ["RDF", "SHACL", "Python"]
+license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/edmondchuc/shaclc"
+repository = "https://github.com/edmondchuc/shaclc"
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [
+    { include = "shaclc" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10"
 lark = "^1.1.8"
 rdflib = "^7.0.0"
 
@@ -19,3 +35,9 @@ ruff = "^0.1.9"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = [
+    "I001",
+    "I002"
+]

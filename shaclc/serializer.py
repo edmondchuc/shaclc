@@ -1,8 +1,8 @@
 from typing import Any
 
-from lark import Tree, Token
+from lark import Token, Tree
 from lark.visitors import Visitor_Recursive, _Leaf_T
-from rdflib import Graph, URIRef, BNode, Literal, RDF, RDFS, OWL, SH, XSD
+from rdflib import OWL, RDF, RDFS, SH, XSD, BNode, Graph, Literal, URIRef
 from rdflib.collection import Collection
 
 
