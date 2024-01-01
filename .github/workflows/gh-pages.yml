@@ -37,7 +37,7 @@ jobs:
         run: npm --prefix shaclc-ui ci
 
       - name: Build app
-        run: npm --prefix shaclc-ui run build-only
+        run: npm --prefix shaclc-ui run build-only -- --base=/shaclc/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
