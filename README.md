@@ -4,6 +4,10 @@ A Python SHACL Compact Syntax parser and serializer based on the specification a
 
 All tests defined in [github.com/w3c/data-shapes/shacl-compact-syntax/tests](https://github.com/w3c/data-shapes/tree/gh-pages/shacl-compact-syntax/tests) are passing.
 
+## Browser playground
+
+Play around with the implementation in your browser at https://edmondchuc.github.io/shaclc/.
+
 ## Quickstart
 
 Installation.
