@@ -1,5 +1,9 @@
+from pathlib import Path
+
 from lark import Lark
 
-from shaclc.grammar import grammar
+grammar_path = Path(__file__).parent / "grammar.lark"
 
-shaclc_parser = Lark(grammar, start="shacl_doc")
+with open(grammar_path, "r", encoding="utf-8") as file:
+    grammar = file.read()
+    shaclc_parser = Lark(grammar, start="shacl_doc")
